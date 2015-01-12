@@ -43,10 +43,12 @@ Only 79 features are found to with either "mean" or "std" is part of its name."s
 ```x_fullset <- select(x_fullset,sel)```
 
 names of the 79 features will be added as the column names of the tables of all the measurements.
+
 we delete "(" and ")" in the column names
+
 ```coln <- sub("\\(\\)","",coln)
-colnames (x_fullset) <- coln
-```
+colnames (x_fullset) <- coln```
+
 
 ### Merge y_train and y_test
 y_train and y_test contains activity labels, not activity names
