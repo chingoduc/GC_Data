@@ -147,11 +147,12 @@ For example for the same measurement, says tBodyAcc-mean-X, its means and std wi
 ```for (i in 1:ncol(act_subj_meansd)) {
   final_dataset <- cbind(final_dataset, act_subj_meansd[,rearrange[i]])
   final_colnames[i] <- colnames(act_subj_meansd)[rearrange[i]]
-}
-```
-```final_dataset <- subset(final_dataset, TRUE, select = -V1)
-colnames(final_dataset) <- final_colnames
-write.csv(final_dataset, "finalreport.csv")
-write.table(final_dataset, "finalreport.txt", row.names=FALSE)
-```
+}```
+
+```final_dataset <- subset(final_dataset, TRUE, select = -V1)```
+```colnames(final_dataset) <- final_colnames```
+```write.csv(final_dataset, "finalreport.csv")```
+```write.table(final_dataset, "finalreport.txt", row.names=FALSE)```
+
+
 
